@@ -1,0 +1,39 @@
+{
+    "itemList" : [ {
+        "id": 1,
+        "name" : "Apple",
+        "description" : "Eat one every day to keep the doctor away!",
+        "imageUrl" : "https://www.apples.me/assets/images/rubyfrost.jpg",
+        "price": 12
+      }, 
+      {
+        "id": 2,
+        "name" : "Grape",
+        "description" : "Wine is great, but grapes are even better.",
+        "imageUrl" : "http://blogs.discovermagazine.com/d-brief/files/2019/02/Grapes.jpg",
+        "price": 8
+      },
+      {
+        "id": 3,
+        "name" : "Grapefruit",
+        "description" : "Pink or red, always heathy and delicious.",
+        "imageUrl" : "https://www.theplantguru.com/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/g/r/grapefruit.jpg",
+        "price": 11
+      },
+      {
+        "id": 4,
+        "name" : "Papaya",
+        "description" : "Super popular for breakfast",
+        "imageUrl" : "https://exoticfruitbox.com/wp-content/uploads/2015/10/papaya-3-Exotic.jpg",
+        "price": 5
+      },
+      {
+        "id": 5,
+        "name" : "Pineapple",
+        "description" : "Enjoy it (but don't forget to peel first).",
+        "imageUrl" : "https://images.fineartamerica.com/images-medium-large-5/-fresh-pineapple-bernard-jaubert.jpg",
+        "price": 4
+      }
+    ]
+  }
+  

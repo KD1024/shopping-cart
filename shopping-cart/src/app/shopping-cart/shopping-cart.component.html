@@ -1,0 +1,41 @@
+<style>
+  table {
+    margin: 0 5% 0 5%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+</style>
+<mat-card>
+  <button mat-raised-button>Go to Checkout</button>
+  <div style="position: absolute; right: 5%; bottom: 10px;">
+    <a routerLink="/cart" routerLinkActive="active">
+      <fa-icon [icon]="['fas', 'shopping-cart']" size="lg"></fa-icon>
+      {{ cart.totalNo }} items, {{ cart.totalPrice | currency: 'USD' }}
+    </a>
+  </div>
+</mat-card>
+
+<table>
+  <tr *ngFor="let item of cart.cartList; let i = index">
+    <td style="width: 200px; height: 70px">
+      <img
+        style="max-width: 100%;max-height: 100%;"
+        src="{{ item.imageUrl }}"
+      />
+    </td>
+    <td>{{ item.name }}</td>
+    <td>{{ item.description }}</td>
+    <td>{{ item.price | currency: 'USD' }}</td>
+    <td>
+      <button mat-raised-button (click)="removeItem(item, i)">remove from cart</button>
+    </td>
+  </tr>
+</table>
